@@ -23,6 +23,9 @@ The processed dataset used in the published analysis, containing 13,183 reviews.
 | `VADER_Compound_Score` | VADER sentiment score (−1 to +1) |
 | `Sentiment_Category` | Positive, Neutral, or Negative |
 
+### 4. `Sentiment_Validation.ipynb`
+Python notebook that validates VADER sentiment classifications against star-rating-derived ground truth labels, using `All_Reviews_Dataset.xlsx` directly. Ratings of 4-5 stars are treated as Positive, 3 stars as Neutral, and 1-2 stars as Negative, and this ground truth is compared against the `Sentiment_Category` column across the complete dataset (n = 13,183). Running this notebook reproduces the validation results (overall agreement, precision, recall, and F1-score by class) reported in the manuscript.
+
 ## Privacy and Ethics
 
 No personally identifiable information is included in this repository. Data collection and use were conducted for non-commercial academic research and were reviewed by the Burapha University Human Research Ethics Committee (Exemption Determination, Certificate No. IRB2-011/2567).
